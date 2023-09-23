@@ -46,7 +46,7 @@ const EditCards = ({ data, setData, task }) => {
         newArray.push(card);
       }
     });
-    setData([...newArray]);
+    (data.length>0)? setData([...newArray]):setData(null);
   };
 
   useEffect(() => {
